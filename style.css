@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #D7CEC7;
+}
+header {
+  min-width: 500px:
+  width: 100%;
+  position: sticky;
+  background-color: #FFFFFC;
+  padding: 20px 0
+  box-shadow:
+}
+#navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav-list {
+  width: 30%;
+  display: flex;
+  justify-content: space-around;
+
+}
+.nav-links {
+  display: inline-block;
+  list-style: none;
+
+
+}
+.nav-links > a {
+  text-decoration: none;
+  color:
+}
+#logo {
+display: inline-block;
+}
