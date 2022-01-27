@@ -11,6 +11,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poiret+One&family=Qwitcher+Grypen:wght@400;700&family=The+Nautigal&display=swap" rel="stylesheet">
 <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
     <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
@@ -18,15 +19,24 @@
     <nav id="navbar">
       <ul class="nav-list">
         <li class="nav-links"><a href="index.html">home</a></li>
-        <li class="nav-links"><a href="#">about</a></li>
+        <li class="nav-links"><a href="about.html">about</a></li>
       </ul>
       <h2 id="logo">Heather Mielke</h2>
       <ul class="nav-list">
-        <li class="nav-links"><a href="#">projects</a></li>
-        <li class="nav-links"><a href="#">contact</a></li>
+        <li class="nav-links"><a href="projects.html">projects</a></li>
+        <li class="nav-links"><a href="contact.html">contact</a></li>
       </ul>
+      <button class="hamburger"type="button">
+        <div class="bar"></div>
+      </button>
     </nav>
   </header>
+  <nav class="mobile-nav">
+    <a href="#">home</a>
+    <a href="#">about</a>
+    <a href="#">projects</a>
+    <a href="#">contact</a>
+  </nav>
   <section id="welcome-section">
     <div id="greeting-area">
       <h1>Hello!</h1>
@@ -43,7 +53,7 @@
   <section class="about-section">
     <div class="about">
       <h2>About Me</h2>
-      <p>I am a software developers always looking to advance my skills. I come from a background in the beauty industry and was a Cosmetologist for about 4 years. I also obtained my associate in accounting and worked in accounts payable most recently. When I am not learning new skills I enjoy spending time with family, traveling, and <a href="#">continue to more...</a></p>
+      <p>I am a software developers always looking to advance my skills. I come from a background in the beauty industry and was a Cosmetologist for about 4 years. I also obtained my associate in accounting and worked in accounts payable most recently. When I am not learning new skills I enjoy spending time with family, traveling, and <a href="#">continue...</a></p>
     </div>
     <h3>Interests</h3>
     <div id="hobbies">
