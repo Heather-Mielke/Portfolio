@@ -371,7 +371,10 @@ ion-icon:hover {
     flex-direction: column;
   }
   .images {
-    width: 40%;
+    width: 60vw;
+  }
+  .images > img {
+    max-height: 30vw;
   }
   .image-text {
     font-size: 4.5vw;
