@@ -327,6 +327,9 @@ ion-icon:hover {
   .nav-list {
     display: none;
   }
+  #logo {
+    font-size: 2.5em;
+  }
   #welcome-section {
     width: 80%;
     margin: 4vw auto;
@@ -368,7 +371,7 @@ ion-icon:hover {
     flex-direction: column;
   }
   .images {
-    width: 60vw;
+    width: 40vw;
   }
   .image-text {
     font-size: 4.5vw;
