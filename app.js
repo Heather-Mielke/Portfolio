@@ -1,6 +1,4 @@
 $(() => {
-
-
   const $menuButton = $('.hamburger');
   const $mobileMenu = $('.mobile-nav');
 
@@ -8,5 +6,4 @@ $(() => {
     $menuButton.toggleClass('is-active');
     $mobileMenu.toggleClass('is-active');
   })
-
   })
