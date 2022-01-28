@@ -435,8 +435,8 @@ ion-icon:hover {
 }
 #project-images > img {
   border-radius: 3px;
-  width: 70%;
-  margin: 8%;
+  width: 80%;
+  margin: 6%;
   filter: grayscale(75%);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
   border: 4vw dotted white;
@@ -449,6 +449,10 @@ ion-icon:hover {
 }
 #project-images > img:hover {
   filter: grayscale(0);
+}
+.project-container {
+  display: flex;
+  align-items: center;
 }
 .project-buttons {
   display: flex;
@@ -466,10 +470,33 @@ ion-icon:hover {
   font-size: 1.5vw;
   transition: all 1s ease-out;
 }
+.live-button > a {
+  text-decoration: none;
+  color: #FFFFFC;
+}
+.code-button > a {
+  text-decoration: none;
+  color: #FFFFFC;
+}
 .project-buttons > button:hover {
   color: #95818d;
   background-color: #FFFFFC;
   transform: scale(1.1,1.1);
+}
+.next-button, .back-button {
+  display: inline;
+}
+.angle-forward > ion-icon{
+  font-size: 80px;
+  color: #95818d;
+  padding: .3vw;
+  box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+}
+.angle-back > ion-icon {
+  font-size: 80px;
+  color: #95818d;
+  padding: .3vw;
+  box-shadow: 0 5px 10px rgb(0 0 0 /.3);
 }
 /* KeyFrames KeyFrames KeyFrames KeyFrames */
 @keyframes fadeInLeft {
@@ -623,10 +650,13 @@ ion-icon:hover {
   #project-images > img {
     width: 100%;
     margin: 10%;
+    border: none;
     display: block;
   }
   .project-buttons > button {
     margin: 4vw 3vw 20vw 3vw;
-
+  }
+  .next-button, .back-button {
+    display: none;
   }
 }
