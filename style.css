@@ -407,7 +407,7 @@ ion-icon:hover {
   transform: scale(1.1);
   opacity: .8;
 }
-/* PROJECTS PROJECTS PROGECTS PROGECTS PROGECTS PROGECTS */
+/* PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS */
 .projects {
   display: flex;
   flex-direction: column;
@@ -460,8 +460,7 @@ ion-icon:hover {
   align-items: center;
 }
 .project-buttons > button {
-  margin: 4vw 3vw 30vw 3vw;
-  padding: 2vw 5vw;
+  margin: 2vw 3vw 30vw 3vw;
   border-radius: 5px;
   box-shadow: 0 3px 10px rgb(0 0 0 / .3);
   background-color: #95818d;
@@ -473,29 +472,32 @@ ion-icon:hover {
 .live-button > a {
   text-decoration: none;
   color: #FFFFFC;
+  display: block;
+  padding: 2vw 5vw;
 }
 .code-button > a {
   text-decoration: none;
   color: #FFFFFC;
+  display: block;
+  padding: 2vw 5vw;
 }
 .project-buttons > button:hover {
-  color: #95818d;
-  background-color: #FFFFFC;
   transform: scale(1.1,1.1);
+  opacity: .7;
 }
 .next-button, .back-button {
   display: inline;
 }
 .angle-forward > ion-icon{
-  font-size: 80px;
+  font-size: 70px;
   color: #95818d;
-  padding: .3vw;
+  /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
 }
 .angle-back > ion-icon {
-  font-size: 80px;
+  font-size: 70px;
   color: #95818d;
-  padding: .3vw;
+  /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
 }
 /* KeyFrames KeyFrames KeyFrames KeyFrames */
