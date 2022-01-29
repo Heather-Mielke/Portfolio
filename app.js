@@ -5,7 +5,7 @@ $(() => {
 
 
   //click function to add css class is active which ass the menu slide in
-  $menuButton.click(function() {
+  $menuButton.on('click', () => {
     $menuButton.toggleClass('is-active');
     $mobileMenu.toggleClass('is-active');
   })
@@ -77,9 +77,9 @@ $(() => {
 
   screenSize()
 
-  // $('.send-button').on('click', () => {
-  //
-  // })
+  $('.send-button').on('click', () => {
+    document.location.href = 'thankyou.html'
+  })
   //write a function to initiate when send button hit in contact to clear contents and make the check mark send button
   // smallScreen()
 

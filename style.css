@@ -365,15 +365,21 @@ ion-icon:hover {
 .contact-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  /* justify-content: space-around; */
   align-items: center;
   width: 80%;
   margin: 5vw auto 8vw auto;
 }
-.inputs >form{
+form{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+}
+.inputs {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   align-items: center;
 }
 .line {
