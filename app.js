@@ -89,5 +89,6 @@ $(() => {
 }).then(
   message => alert(message)
 );
-  }
+}
+  $('.send-button').on('click', sendEmail());
 })
