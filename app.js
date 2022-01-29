@@ -76,6 +76,11 @@ $(() => {
   // }
 
   screenSize()
+
+  // $('.send-button').on('click', () => {
+  //
+  // })
+  //write a function to initiate when send button hit in contact to clear contents and make the check mark send button
   // smallScreen()
 
 })

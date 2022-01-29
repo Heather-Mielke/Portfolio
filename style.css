@@ -334,6 +334,7 @@ ion-icon:hover {
   transform: scale(1.1, 1.1);
   background-color: #95818d;
   color: #FFFFFC;
+  box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
 /* CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT CONTACT */
 .contact-heading{
@@ -415,7 +416,50 @@ ion-icon:hover {
 .send-button:hover{
   transform: scale(1.1);
   opacity: .8;
+  box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
+/* &:active {
+    //letter-spacing: 2px;
+    letter-spacing: 2px ;
+  }
+  &:after {
+    content:"SUBMIT";
+  }
+}
+.onclic {
+  width: 40px;
+  border-color:$gray;
+  border-width:3px;
+  font-size:0;
+  border-left-color:$green;
+  animation: rotating 2s 0.25s linear infinite;
+
+  &:after {
+    content:"";
+  }
+  &:hover {
+    color:$green;
+    background: white;
+  }
+}
+.validate {
+  font-size:13px;
+  color: white;
+  background: $green;
+  &:after {
+    font-family:'FontAwesome';
+    content:"\f00c";
+  }
+}
+
+@keyframes rotating {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
 /* PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS */
 .projects {
   display: flex;
