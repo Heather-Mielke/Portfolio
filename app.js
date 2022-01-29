@@ -77,18 +77,5 @@ $(() => {
 
   screenSize()
   // smallScreen()
-  const sendEmail = () => {
-    Email.send({
-    Host : "smtp.gmail.com",
-    Username : "heatherlmielke@gmail.com",
-    Password : "Kyra121215!",
-    To : "heatherlmielke@gmail.com",
-    From : $('.email').val(),
-    Subject : $('.subject').val(),
-    Body : $('.message').val()
-}).then(
-  message => alert(message)
-);
-}
-  $('.send-button').on('click', sendEmail());
+
 })
