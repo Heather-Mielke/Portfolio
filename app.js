@@ -75,6 +75,8 @@ $(() => {
   //   }
   // }
 
+
+
   screenSize()
 
   $('.send-button').on('click', () => {

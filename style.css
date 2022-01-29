@@ -36,6 +36,10 @@ header {
   display: inline-block;
   list-style: none;
   font-size: 1em;
+  transition: all .6s;
+}
+.nav-links:hover {
+  transform: translateY(-5px);
 }
 .nav-links > a {
   text-decoration: none;
@@ -72,7 +76,7 @@ header {
   height: 1px;
   background-color: black;
   margin: 9px 0px;
-  transistion: 0.5s;
+  transistion: all 0.9s;
 }
 .hamburger:before {
   width: 80%;
@@ -102,6 +106,7 @@ header {
   min-height: 100vh;
   z-index: 1;
   background-color: #95818d;
+  opacity: .9;
   padding-top: 120px;
   box-shadow: 0 3px 10px rgba(0 0 0 / 0.7);
 }
@@ -144,7 +149,7 @@ header {
   font-size: 6.5em;
   font-weight: 100;
   margin-bottom: 8%;
-  text-shadow: 0 5px 10px rgb(0 0 0 / 0.5);
+  text-shadow: 5px 6px 6px rgb(255 255 255 / 0.9);
   letter-spacing: 1vw;
   animation: fadeInLeft2 3s 1;
 }
@@ -176,6 +181,7 @@ header {
   align-items: center;
   font-weight: 100;
   background-color: #95818d;
+  opacity: .9;
   border-radius: 5%;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
 }
@@ -271,6 +277,7 @@ hr {
 }
 ion-icon:hover {
   transform: scale(1.2, 1.2);
+  /* transform: translateY(-5px); */
 }
 /* ABOUT RESUME ABOUT RESUME ABOUT RESUME ABOUT RESUME */
 .resume {
@@ -316,10 +323,11 @@ ion-icon:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 3vw auto;
+  margin: 4vw auto;
 }
 .resume-button {
   padding: 1vw 3vw;
+
   border-radius: 20px;
   background-color: #FFFFFC ;
   color: #470024;
@@ -328,13 +336,14 @@ ion-icon:hover {
   opacity: .7;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
   cursor: pointer;
-  transition: all .6s;
+  transition: all .5s;
 }
 .resume-list >ion-icon:hover {
   transform: scale(1, 1);
 }
 .resume-button:hover {
-  transform: scale(1.1, 1.1);
+  /* transform: scale(1.1, 1.1); */
+  transform: translateY(-10px);
   background-color: #95818d;
   color: #FFFFFC;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
@@ -352,7 +361,7 @@ ion-icon:hover {
   font-weight: 100;
   padding: 2vw ;
   border-right: 1px solid #888888;
-  text-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+  text-shadow: 5px 6px 8px rgb(255 255 255 / 0.9);
   animation: fadeInLeft2 3s 1;
 }
 .icons {
@@ -483,7 +492,7 @@ form{
   font-weight: 100;
   padding: 2vw ;
   border-bottom: 1px solid #999999;
-  text-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+  text-shadow: 5px 6px 8px rgb(255 255 255 / 0.9);
   animation: fadeInLeft2 3s 1;
 }
 .project-container {
@@ -499,8 +508,8 @@ form{
 }
 #project-images > img {
   border-radius: 3px;
-  width: 80%;
-  margin: 6%;
+  width: 90%;
+  margin: 6% 4%;
   filter: grayscale(75%);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
   border: 4vw dotted white;
@@ -532,7 +541,7 @@ form{
   font-family: 'Montserrat', cursive;
   font-size: 1.5vw;
   cursor: pointer;
-  transition: all 1s ease-out;
+  transition: all 1s ease;
 }
 .live-button > a {
   text-decoration: none;
@@ -564,13 +573,16 @@ form{
   color: #95818d;
   /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+  transition: all .8s ease;
 }
 .angle-back > ion-icon {
   font-size: 70px;
   color: #95818d;
   /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+  transition: all .8s ease;
 }
+
 /* THANK YOU THANK YOU THANK YOU THANK YOU */
 #thanks-container {
   display: flex;
@@ -779,6 +791,9 @@ form{
   }
   .send-button{
     margin-bottom: 10vw;
+  }
+  .project-title {
+    font-size: 4.5rem;
   }
   #project-images > img {
     width: 100%;
