@@ -8,7 +8,9 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: linear-gradient(100deg,#f0ece9 30%, #b3a196);
+  background: linear-gradient(to top, #f0ece9ba, #b3a196cc ), url(https://images.unsplash.com/photo-1566305977571-5666677c6e98?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTc1fHxwYXR0ZXJufGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60)no-repeat top center;
+  background-size: cover;
+  /* background: linear-gradient(100deg,#f0ece9 30%, #b3a196); */
   font-family: 'Montserrat', sans-serif;
 }
 header {
@@ -52,7 +54,6 @@ header {
   color:#95818d;
   font-family: 'The Nautigal', cursive;
   font-size: 4em;
-
 }
 /* HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER HAMBURGER */
 .hamburger {
@@ -60,7 +61,6 @@ header {
   display: block;
   width: 35px;
   cursor: pointer;
-
   appearence: none;
   background: none;
   outline: none;
@@ -200,6 +200,7 @@ header {
 .about > p > a {
   color: #470024;
   text-decoration: none;
+  cursor: pointer;
   transition: all .5s ;
 }
 .about > p > a:hover {
@@ -265,6 +266,7 @@ hr {
   font-size: 2.5em;
   color: #470024;
   margin: 0 2vw;
+  cursor: pointer;
   transition: all .5s;
 }
 ion-icon:hover {
@@ -325,6 +327,7 @@ ion-icon:hover {
   font-family: 'Montserrat', cursive;
   opacity: .7;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.5);
+  cursor: pointer;
   transition: all .6s;
 }
 .resume-list >ion-icon:hover {
@@ -392,6 +395,7 @@ form{
   opacity: .9;
   font-size: 20px;
   padding-left: 20px;
+  cursor: text;
 }
 .box {
   width: 50vw;
@@ -403,7 +407,7 @@ form{
   margin:1.5vw 0;
   font-size:20px;
   padding-left: 20px;
-
+  cursor: text;
 }
 .send-button {
   padding: 1.5vw 5vw;
@@ -527,6 +531,7 @@ form{
   color: #FFFFFC;
   font-family: 'Montserrat', cursive;
   font-size: 1.5vw;
+  cursor: pointer;
   transition: all 1s ease-out;
 }
 .live-button > a {
@@ -534,19 +539,25 @@ form{
   color: #FFFFFC;
   display: block;
   padding: 2vw 5vw;
+  cursor: pointer;
 }
 .code-button > a {
   text-decoration: none;
   color: #FFFFFC;
   display: block;
   padding: 2vw 5vw;
+  cursor: pointer;
 }
 .project-buttons > button:hover {
   transform: scale(1.1,1.1);
   opacity: .7;
 }
+.hidden-buttons {
+  display: none;
+}
 .next-button, .back-button {
   display: inline;
+  cursor: pointer;
 }
 .angle-forward > ion-icon{
   font-size: 70px;
@@ -779,6 +790,12 @@ form{
     margin: 4vw 3vw 20vw 3vw;
   }
   .next-button, .back-button {
+    display: none;
+  }
+  .hidden-buttons {
+    display: none;
+  }
+  .main-buttons {
     display: none;
   }
 }
