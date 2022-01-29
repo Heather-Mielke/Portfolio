@@ -62,7 +62,7 @@ $(() => {
       $('#project-images').children().css('display', 'block')
     }//^^cant get this to display all the images after going through the carousel. only if you do not use the carousel.
   }
-
+//
   // const smallScreen = () => {
   //   if ($(window).width() <= 800) {
   //     // $('.project1').css('display', 'block')

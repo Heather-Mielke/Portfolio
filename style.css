@@ -190,6 +190,7 @@ header {
   color: #470024;
   margin-bottom: 1vw;
   text-shadow: 0 3px 10px rgba(0 0 0/ 0.5);
+  animation: fadeInLeft2 3s 1;
 }
 .about > p {
   font-size: 25px;
@@ -348,6 +349,7 @@ ion-icon:hover {
   padding: 2vw ;
   border-right: 1px solid #888888;
   text-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+  animation: fadeInLeft2 3s 1;
 }
 .icons {
   display: flex;
@@ -367,9 +369,11 @@ ion-icon:hover {
   width: 80%;
   margin: 5vw auto 8vw auto;
 }
-.inputs {
+.inputs >form{
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .line {
   width:50vw;
@@ -379,6 +383,8 @@ ion-icon:hover {
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
   border: none;
   opacity: .9;
+  font-size: 20px;
+  padding-left: 20px;
 }
 .box {
   width: 50vw;
@@ -388,6 +394,9 @@ ion-icon:hover {
   border:none;
   opacity: .75;
   margin:1.5vw 0;
+  font-size:20px;
+  padding-left: 20px;
+
 }
 .send-button {
   padding: 1.5vw 5vw;
@@ -421,6 +430,7 @@ ion-icon:hover {
   padding: 2vw ;
   border-bottom: 1px solid #999999;
   text-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
+  animation: fadeInLeft2 3s 1;
 }
 .project-container {
   width: 85vw;
@@ -499,6 +509,66 @@ ion-icon:hover {
   color: #95818d;
   /* padding: 2px; */
   box-shadow: 0 5px 10px rgb(0 0 0 /.3);
+}
+/* THANK YOU THANK YOU THANK YOU THANK YOU */
+#thanks-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #95818d;
+  margin: 8vw 5vw 15vw 5vw;
+  border-radius: 10px;
+  box-shadow: 0 13px 10px rgb(0 0 0/ 0.7);
+}
+.thank-you-title {
+  color: #470024;
+  font-size: 8vw;
+  font-weight: 100;
+  padding: 2vw ;
+  border-bottom: 1px solid #fffffc;
+  text-shadow: 0 4px 10px rgb(0 0 0 / 0.4);
+  animation: fadeInLeft2 3s 1;
+}
+#thanks-container >.thanks-text {
+  color: #FFFFFC;
+  font-size: 4vw;
+  font-weight: 100;
+  margin: 8vw 0;
+  animation: fadeInLeft2 3s 1;
+}
+.additional {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFFFFC;
+  margin:3vw 5vw 22vw 5vw;
+  border-radius: 10px;
+  box-shadow: 0 13px 10px rgb(0 0 0/ 0.7);
+}
+.additional > .thanks-text {
+  color: #95818d;
+  font-size: 4vw;
+  font-weight: 100;
+  margin: 8vw 0;
+}
+.additional > i > a{
+  font-size: 60px;
+  color: #470024;
+}
+.thanks-icons {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+}
+.thanks-icons > i {
+  margin-bottom: 4vw;
+}
+.thanks-icons > i > a {
+  color: #470024;
+  margin-bottom: 4vw;
+  font-size: 60px;
 }
 /* KeyFrames KeyFrames KeyFrames KeyFrames */
 @keyframes fadeInLeft {

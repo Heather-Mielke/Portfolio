@@ -40,21 +40,24 @@
   <section class="contact-heading">
     <h1>Contact Me</h1>
     <div class="icons">
-      <i><a href=""><ion-icon name="logo-facebook"></ion-icon></a></i>
+      <i><a href="https://www.facebook.com/heather.l.mielke" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></i>
       <i><a href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
-      <i><a href="#"><ion-icon name="mail-outline"></ion-icon></a></i>
+      <i><a href="mailto:heatherlmielke@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
     </div>
   </section>
   <section class="contact-container">
     <div class="inputs">
-      <input class="line" type="text" name="text" placeholder="Name">
-      <input class="line" type="text" name="email" placeholder="Example@gmail.com">
-      <input class="line" type="text" name="subject" placeholder="Subject" >
+      <form action="https://formsubmit.co/heatherlmielke@gmail.com" method="POST">
+      <input class="line" type="text" name="text" placeholder="Name" required>
+      <input class="line" type="email" name="email" placeholder="Example@gmail.com" required>
+      <input type="hidden" name="_next" value="thankyou.html">
+      <input class="line" type="text" name="subject" placeholder="Subject" required>
     </div>
-      <input class="box" type="text" name="message" placeholder="Message here...">
+      <input class="box" type="text" name="message" placeholder="Message here..." required>
   </section>
   <section class="button-section">
-    <button class="send-button" type="button" name="submit">Send</button>
+    <button class="send-button" type="submit">Send</button>
+    </form>
   </section>
   <footer>
     <div class="connect">
@@ -64,7 +67,7 @@
     <div class="social-media">
       <i><a href="https://github.com/Heather-Mielke" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
       <i><a href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
-      <i><a href="#"><ion-icon name="mail-outline"></ion-icon></a></i>
+      <i><a href="mailto:heatherlmielke@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
     </div>
   </footer>
   </body>
