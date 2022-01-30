@@ -146,7 +146,7 @@ header {
   flex-direction: column;
 }
 #greeting-area > h1 {
-  font-size: 6.5em;
+  font-size: 7em;
   font-weight: 100;
   margin-bottom: 8%;
   text-shadow: 5px 6px 6px rgb(255 255 255 / 0.9);
@@ -327,7 +327,6 @@ ion-icon:hover {
 }
 .resume-button {
   padding: 1vw 3vw;
-
   border-radius: 20px;
   background-color: #FFFFFC ;
   color: #470024;
@@ -402,8 +401,9 @@ form{
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
   border: none;
   opacity: .9;
+  font-family: 'Montserrat', cursive;
   font-size: 20px;
-  padding-left: 20px;
+  padding-left: 10px;
   cursor: text;
 }
 .box {
@@ -412,10 +412,11 @@ form{
   border-radius: 10px;
   box-shadow: 0 4px 10px rgb(0 0 0 / 0.2);
   border:none;
-  opacity: .75;
+  opacity: .9;
+  font-family: 'Montserrat', cursive;
   margin:1.5vw 0;
-  font-size:20px;
-  padding-left: 20px;
+  font-size:22px;
+  padding:10px 0 0 10px;
   cursor: text;
 }
 .send-button {
@@ -425,7 +426,7 @@ form{
   border: none;
   box-shadow: 0 3px 10px rgb(0 0 0 /.4);
   color: #FFFFFC;
-  font-size: 2vw;
+  font-size: 25px;
   font-family: 'Montserrat', cursive;
   font-weight: 100;
   margin-bottom: 2vw;
@@ -444,10 +445,11 @@ form{
   justify-content: center;
   align-items: center;
 }
+/* #470024 */
 .project-title {
-  color: #470024;
+  color: #FFFFFC;
   font-size: 8vw;
-  font-weight: 100;
+  font-weight: 200;
   padding: 2vw ;
   border-bottom: 1px solid #999999;
   text-shadow: 5px 6px 8px rgb(255 255 255 / 0.9);
@@ -470,7 +472,10 @@ form{
   margin: 6% 4%;
   filter: grayscale(75%);
   box-shadow: 0 3px 10px rgb(0 0 0 / 0.4);
-  border: 4vw dotted white;
+  border-width:4vw ;
+  border-style:dotted ;
+  border-image-source: linear-gradient( to bottom, #f7f2e9, #e6e3df);
+  /* May just go back to white dotted border since I cannot figure out how to make the dots look like light bulbs */
   display: none;
   transition: all 1s ease-out;
   /* align-self: center; */
@@ -685,17 +690,19 @@ form{
     flex-direction: column;
   }
   #greeting-area > h1 {
-    font-size: 8vw;
+    font-size: 12vw;
     text-align: center;
     margin-bottom: 2vw;
   }
   .name {
-    font-size: 4vw;
+    font-size: 6.5vw;
+    font-weight: 200;
     margin-bottom: 2%;
     text-align: center;
   }
   .description {
-    font-size: 3vw;
+    font-size: 3.5vw;
+    font-weight: 200;
     text-align: center;
     margin-bottom: 3vw;
   }
@@ -710,10 +717,11 @@ form{
     margin-bottom: 5vw;
   }
   .about > h2 {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
   .about > p {
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 200;
   }
   #hobbies {
     flex-direction: column;
@@ -766,7 +774,9 @@ form{
     display: block !important;
   }
   .project-buttons > button {
-    margin: 4vw 3vw 20vw 3vw;
+    border: none;
+    margin: 4vw 3vw 15vw 3vw;
+    font-size: 15px;
   }
   .next-button, .back-button {
     display: none;
@@ -776,5 +786,8 @@ form{
   }
   .main-buttons {
     display: none;
+  }
+  .resume-button {
+    font-size: 20px;
   }
 }
