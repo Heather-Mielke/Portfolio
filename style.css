@@ -437,48 +437,6 @@ form{
   opacity: .8;
   box-shadow: 0 10px 10px rgb(0 0 0 /.7);
 }
-/* &:active {
-    //letter-spacing: 2px;
-    letter-spacing: 2px ;
-  }
-  &:after {
-    content:"SUBMIT";
-  }
-}
-.onclic {
-  width: 40px;
-  border-color:$gray;
-  border-width:3px;
-  font-size:0;
-  border-left-color:$green;
-  animation: rotating 2s 0.25s linear infinite;
-
-  &:after {
-    content:"";
-  }
-  &:hover {
-    color:$green;
-    background: white;
-  }
-}
-.validate {
-  font-size:13px;
-  color: white;
-  background: $green;
-  &:after {
-    font-family:'FontAwesome';
-    content:"\f00c";
-  }
-}
-
-@keyframes rotating {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-} */
 /* PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS PROJECTS */
 .projects {
   display: flex;
@@ -547,14 +505,14 @@ form{
   text-decoration: none;
   color: #FFFFFC;
   display: block;
-  padding: 2vw 5vw;
+  padding: 2vw 4vw;
   cursor: pointer;
 }
 .code-button > a {
   text-decoration: none;
   color: #FFFFFC;
   display: block;
-  padding: 2vw 5vw;
+  padding: 2vw 4vw;
   cursor: pointer;
 }
 .project-buttons > button:hover {
@@ -562,7 +520,7 @@ form{
   opacity: .7;
 }
 .hidden-buttons {
-  display: none;
+  display: none !important;
 }
 .next-button, .back-button {
   display: inline;
@@ -642,6 +600,12 @@ form{
   color: #470024;
   margin-bottom: 4vw;
   font-size: 60px;
+}
+.toggleImagesOff {
+  display: none;
+}
+.toggleImagesOn {
+  display: block;
 }
 /* KeyFrames KeyFrames KeyFrames KeyFrames */
 @keyframes fadeInLeft {
@@ -799,7 +763,7 @@ form{
     width: 100%;
     margin: 10%;
     border: none;
-    display: block;
+    display: block !important;
   }
   .project-buttons > button {
     margin: 4vw 3vw 20vw 3vw;
@@ -808,7 +772,7 @@ form{
     display: none;
   }
   .hidden-buttons {
-    display: none;
+    display: block !important;
   }
   .main-buttons {
     display: none;
