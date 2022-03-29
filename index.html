@@ -1,92 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Heather Mielke</title>
-  <!--favicon-->
-  <link rel="shortcut icon" type="image/jpg" href="favicon_io/favicon.ico">
-  <link rel="manifest" href="/site.webmanifest">
-  <!--css, googlefonts, icons-->
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200&family=Poiret+One&family=Qwitcher+Grypen:wght@400;700&family=The+Nautigal&display=swap" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <!--javascript,jquery-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&family=Hurricane&family=Montserrat:wght@100;200;300&family=Open+Sans:wght@300;400&family=Parisienne&family=Work+Sans:wght@100;200;300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" charset="utf-8"></script>
   <script src="app.js" charset="utf-8"></script>
 </head>
 <body>
-  <header>
-    <nav id="navbar">
-      <ul class="nav-list">
-        <li class="nav-links"><a href="index.html">home</a></li>
-        <li class="nav-links"><a href="about.html">about</a></li>
-      </ul>
-      <h2 id="logo">Heather Mielke</h2>
-      <ul class="nav-list">
-        <li class="nav-links"><a href="projects.html">projects</a></li>
-        <li class="nav-links"><a href="contact.html">contact</a></li>
-      </ul>
-      <button class="hamburger"type="button">
-        <div class="bar"></div>
-      </button>
-    </nav>
-  </header>
-  <nav class="mobile-nav">
-    <a href="index.html">home</a>
-    <a href="about.html">about</a>
-    <a href="projects.html">projects</a>
-    <a href="contact.html">contact</a>
-  </nav>
-  <section id="welcome-section">
-    <div id="greeting-area">
-      <h1>Hello!</h1>
-      <p class="name">I'm Heather Mielke</p>
-      <p class="description">Software Developer | Cosmetologist | Mom</p>
+    <header class="navbar">
+        <p><a class="nav-links" href="#about">About</a></p>
+        <p><a class="nav-links" href="#projects">Projects</a></p>
+        <h2><a href='#home'><img class="logo" src="HM.png" alt=""></a></h2>
+        <p><a class="nav-links" href="#skills">Skills</a></p>
+        <p><a class="nav-links" href="#contact">Contact</a></p>
+        <button class="hamburger"type="button">
+            <div class="bar"></div>
+          </button>
+    </header>
+    <nav class="mobile-nav">
+        <a class="mobile-link" href="#about">about</a>
+        <a class="mobile-link" href="#projects">projects</a>
+        <a class="mobile-link" href="#skills">skills</a>
+        <a class="mobile-link" href="#contact">contact</a>
+      </nav>
+    <div class="background" id="home">
+        <div class="title-container">
+        <div class="text-title">
+       <h1>Heather Mielke</h1> 
+       <p>Software Developer | Cosmetologist | Mom</p>
     </div>
-    <div id="greeting-img">
-      <div class="empty">
-        <img src="heather4.jpg" alt="photo of heather">
-      </div>
+    <div class="image-title">
+        <img class="image-border" src="gold-lines.png" alt="">
+        <img class="selfie" src="heather.jpeg" alt="">
+    </div>
+</div>
+    <div class="arrows">
+        <a href="#about"><img src="gold-arrows.png" alt=""></a>
+    </div>
+    </div>
+    <div class="about" id="about">
+        <img class="diamond" src="gold-diamond.png" alt="">
+        <h2>About</h2>
+        <img class="show-small" src="heather.jpeg" alt="">
+        <div class="about-info">
+        <p>I am a software developer always looking to advance my skills. Responsive and visually appealing 
+            designs are some of my main focuses when creating applications.I come from a background in the 
+            beauty industry and was a Cosmetologist for about 4 years. I also obtained my associate in accounting 
+            and worked in accounts payable most recently for about a year. When I am not learning new skills I enjoy 
+            spending time with family, traveling, and being by the water.
+        </p>
+        </div>
+        <img class="diamond2" src="gold-diamond.png" alt="">
 
+            <div class="edu-container">
+                 <h3 class="education">Education</h3>
+                 <div class="edu-sec">
+                   <p><i class="bi bi-mortarboard"></i><b>General Assembly</b> | Software Engineering Immersive</p> 
+                    <p><i class="bi bi-mortarboard"></i><b>Rasmussen University</b> | AS Software Application Development</p>
+                    <p><i class="bi bi-mortarboard"></i><b>Rasmussen University</b> | AS Accounting</p>
+                </div>
+                <form method="get" action="Heather-Mielke-Resume-2022.pdf" target="_blank">
+                     <button class="resume" type="submit">Download Resume<span>(pdf)</span></button>
+                 </form>
+             </div>
+        
     </div>
-  </section>
-  <section class="about-section">
-    <div class="about">
-      <h2>About Me</h2>
-      <p>I am a software developer always looking to advance my skills. Responsive and visually appealing designs are some of my main focuses when creating applications. I come from a background in the beauty industry and was a Cosmetologist for about 4 years. I also obtained my associate in accounting and worked in accounts payable most recently for about a year. When I am not learning new skills I enjoy spending time with family, traveling, and <a href="about.html">continue...</a></p>
+    <div class="photo-container">
+        <h3 class="banner-border">Family | Life</h3>
+        <div class="banner-container" >
+            <div class="banner-slider-track">
+                <div class="img-container">
+                <img src="ky-me3.JPG" alt="">
+                 </div>
+                <div class="img-container">
+                <img src="me-d-d.JPG" alt="">
+                 </div>
+                <div class="img-container">
+                 <img src="kyra2.jpeg" alt="">
+                </div>
+                 <div class="img-container">
+                 <img src="ky-me2.JPG" alt="">
+                </div>
+                 <div class="img-container">
+                 <img src="t-d-mee.JPG" alt="">
+                </div>
+                 <div class="img-container">
+                 <img src="ky-me.JPG" alt="">
+                </div>
+                 <div class="img-container">
+                 <img src="d-me-d.JPG" alt="">
+                </div>
+                 <div class="img-container">
+                 <img src="dad-t-d-me.JPG" alt="">
+                </div>
+             
+             
+                <div class="img-container">
+                    <img src="ky-me3.JPG" alt="">
+                     </div>
+                    <div class="img-container">
+                    <img src="me-d-d.JPG" alt="">
+                     </div>
+                    <div class="img-container">
+                     <img src="kyra2.jpeg" alt="">
+                    </div>
+                     <div class="img-container">
+                     <img src="ky-me2.JPG" alt="">
+                    </div>
+                     <div class="img-container">
+                     <img src="t-d-mee.JPG" alt="">
+                    </div>
+                     <div class="img-container">
+                     <img src="ky-me.JPG" alt="">
+                    </div>
+                     <div class="img-container">
+                     <img src="d-me-d.JPG" alt="">
+                    </div>
+                     <div class="img-container">
+                     <img src="dad-t-d-me.JPG" alt="">
+                    </div>
+             </div>
+        </div>
+        <p class="banner-border"></p>
     </div>
-    <h3>Interests</h3>
-    <div id="hobbies">
-      <div class="images">
-        <img src="https://images.unsplash.com/photo-1620331313174-3c6cfd5e292a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aGFpcnN0eWxpc3R8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60" alt="blow dryer and flat iron">
-        <p class="image-text">Cosmetology</p>
-      </div>
-      <div class="images">
-        <img src="https://images.unsplash.com/photo-1487017159836-4e23ece2e4cf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bW9kZXJuJTIwd2ViJTIwZGV2ZWxvcGVyfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=800&q=60" alt="developing">
-        <p class="image-text">Developing</p>
-      </div>
-      <div class="images">
-        <img src="https://images.unsplash.com/photo-1542650742-d3150fb66298?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjV8fHRyYXZlbGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=800&q=60" alt="travel case">
-        <p class="image-text">Traveling</p>
-      </div>
+    <div class="projects-container" id="projects">
+        <div class="head">
+            <h3>Projects</h3>
+        </div>
+        <div class="project1">
+            <img class="img" src="coffee-project.png" alt="">
+            <div class="overlay">
+                <a href="https://guarded-journey-84973.herokuapp.com/" target="_blank">View</a>
+                <a href='https://github.com/Heather-Mielke/Coffee' target="_blank">Code</a>
+            </div>
+        </div>
+        <div class="project3">
+            <img class="img" src="movie-project.png" alt="">
+            <div class="overlay">
+                <a href="https://limitless-scrubland-74072.herokuapp.com/" target="_blank">View</a>
+                <a href='https://github.com/Heather-Mielke/Movies-Frontend' target="_blank">Code</a>
+            </div>
+        </div>
+        <div class="project4">
+            <img class="img" src="cozy-furniture.png" alt="">
+            <div class="overlay">
+                <a href="https://buyfurniture.herokuapp.com/" target="_blank">View</a>
+                <a href='https://github.com/carablythe/furniture_frontend' target="_blank">Code</a>
+            </div>
+        </div>
+        <div class="project5">
+            <img class="img" src="memories.png"alt="">
+            <div class="overlay">
+                <a href="https://remember-the-memories.com/" target="_blank">View</a>
+                <a href='https://github.com/Heather-Mielke/Memories-Frontend' target="_blank">Code</a>
+            </div>
+        </div>
     </div>
-  </section>
-  <footer>
-    <div class="connect">
-      <p>Connect with Me</p>
-      <hr>
-    </div>
-    <div class="social-media">
-      <i><a href="https://github.com/Heather-Mielke" target="_blank"><ion-icon name="logo-github"></ion-icon></a></i>
-      <i><a href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></i>
-      <i><a href="mailto:heatherlmielke@gmail.com"><ion-icon name="mail-outline"></ion-icon></a></i>
-    </div>
-  </footer>
 
+    <div class="skills-container" id="skills">
+        <h3 class="skills-title">Skills</h3>
+        <div class="skills">
+            <ion-icon name="logo-html5" class="icon"></ion-icon>
+            <ion-icon name="logo-css3" class="icon"></ion-icon>
+            <i class="bi bi-bootstrap-fill icon"></i>
+            <ion-icon name="logo-javascript" class="icon"></ion-icon>
+            <ion-icon name="logo-react" class="icon"></ion-icon>
+            <ion-icon name="logo-nodejs" class="icon"></ion-icon>
+            <ion-icon name="logo-python" class="icon"></ion-icon>
+            <ion-icon name="git-branch-outline" class="icon"></ion-icon>
+            <ion-icon name="logo-github" class="icon"></ion-icon>
+            <ion-icon name="logo-google" class="icon"></ion-icon>
+        </div>
+    </div>
+
+
+
+    
+    <div class="contact-container" id="contact">
+        <h3>Contact Me</h3>
+        <div class="icons">
+            <a href="https://www.facebook.com/heather.l.mielke" target="_blank"><i class="bi bi-facebook" ></i></a>
+            <a  href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:heatherlmielke@gmail.com"><i class="bi bi-envelope-fill" ></i></a>
+        </div>
+      </section>
+      <section class="contact-container" >
+        <form  method="POST" action="https://formsubmit.co/heatherlmielke@gmail.com" method="POST">
+          <div class="inputs">
+            <input class="line" type="text" name="text" placeholder="Name" required>
+            <input class="line email" type="email" name="email" placeholder="Example@gmail.com" required>
+            <input class="line subject" type="text" name="subject" placeholder="Subject" required>
+          </div>
+          <textarea class="box message" type="text" name="message" placeholder="Message here..." required></textarea>
+          <input type="hidden" name="_next" value="https://www.heathermielke.com/thankyou.html">
+        <div class="button-section">
+          <button class="send-button onclic validate" type="submit">Send</button>
+        </div>
+        </form>
+    </section>
+    </div>
+    <footer>
+        <div class="icons">
+            <a href="https://www.facebook.com/heather.l.mielke" target="_blank"><i class="bi bi-facebook" ></i></a>
+            <a  href="https://www.linkedin.com/in/heather-mielke/" target="_blank"><i class="bi bi-linkedin"></i></a>
+            <a href="mailto:heatherlmielke@gmail.com"><i class="bi bi-envelope-fill" ></i></a>
+        </div>
+        <p>Created by Heather Mielke © Copyright 2022</p>
+    </footer>
+    
 </body>
 </html>
