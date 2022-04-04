@@ -601,7 +601,7 @@ a > i:hover{
   padding-top: 1rem;
   font-family: 'Montserrat', sans-serif;
 }
-textarea {
+.message {
   background: transparent;
   border: 1px groove white;
   height: 10rem;
@@ -612,6 +612,7 @@ textarea {
   width: 50%;
   min-width: 310px;
   margin: 0 auto;
+  color: white;
 }
 .button-section{
   margin: 2vh auto;
