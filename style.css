@@ -9,6 +9,7 @@ body{
   font-weight: 200;
   font-family: 'Montserrat', sans-serif;
   background: black;
+  position: relative;
 }
 .background{
   background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .99)60%), url('black-sand.jpg');
@@ -125,6 +126,132 @@ header{
   text-shadow: 0 3px 10px rgba(0 0 0 / 0.7);
 }
 /* END OF HAMBURGER END OF HAMBURGER END OF HAMBURGER */
+
+
+.modal-background {
+  position: fixed;
+  background: rgb(0 0 0 /.5);
+  width: 100vw;
+  height: auto;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 99 !important;
+  display: none;
+}
+.content-cont {
+  display: flex;
+  background-color: rgb(70, 70, 70);
+  width: 80%;
+  padding: 5vw;
+  position: relative;
+  margin:auto;
+  border: 3px inset rgba(200, 150, 100, .6);
+  border-radius: 10px;
+  align-items: center;
+}
+.image-cont {
+  padding: 2vh 0;
+  width: 50%;
+}
+.image-cont > img {
+  width: 100%;
+  box-shadow: 0 3px 10px rgb(0 0 0 /.8);
+}
+.text-cont {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2vw;
+  line-height: 25px;
+  /* text-align: center; */
+  font-weight: 100;
+}
+.text-cont > h3 {
+  font-size: 40px;
+  margin-bottom: 3vh;
+  font-family: 'Hurricane', cursive;
+}
+.tech {
+  text-align: center;
+  font-size: 22px;
+  margin-top: 5vh;
+}
+.icon-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  width: 100%;
+}
+.icon-cont > .icon {
+  font-size: 25px;
+  margin: 1vw;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  background:transparent;
+  color: white;
+  font-family: 'Hurricane', cursive;
+  font-size: 25px;
+  border: none;
+  padding: 0 10px;
+  border-bottom: 1px solid rgba(200, 150, 100, .6);
+  width: 60px;
+  height: 30px;
+  transition: all .3s ease;
+  cursor: pointer;
+}
+.close:hover{
+  transform: scale(1.2);
+  color: rgb(100 100 100 / .8);
+}
+.btn-cont {
+  margin-top: 4vh;
+  display: flex;
+  justify-content: space-around;
+  width: 90%;
+}
+.btn-cont > a {
+  background: transparent;
+  padding: 5px 20px;
+  border: none;
+  border-bottom: 1px solid rgba(200, 150, 100, .6);
+  border-top:1px solid rgba(200, 150, 100, .6);
+  color: white;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  text-decoration: none;
+  transition: all .3s ease;
+  /* margin: 0 1.5vw; */
+  display: inline-block;
+}
+.btn-cont > a:hover{
+  transform: scale(1.2);
+}
+.bold{
+  margin-top: 2vh;
+  font-weight: 900;
+}
+.bold > span {
+ color: rgba(200, 150, 100, .8);
+ text-transform: uppercase;
+ font-size: 20px;
+}
+
+.add-modal
+ {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
 
 
 
@@ -326,13 +453,13 @@ b{
   padding: 15vh 5vw;
   display: grid;
   grid-template-columns: repeat(15, 1fr);
-  grid-template-rows: 150px 330px 310px;
+  grid-template-rows: 150px 450px 450px;
   grid-template-areas: 
   "head head head head head head head head head head head head head head head"
-  "project1 project1 project1 project1 project1 project1 project1 project3 project3 project3 project3 project3 project3 project3 project3"
-  "project4 project4 project4 project4 project4 project4 project4 project4 project5 project5 project5 project5 project5 project5 project5";
+  "project1 project1 project1 project1 project1 project1 project1 project2 project2 project2 project2 project2 project2 project2 project2"
+  "project3 project3 project3 project3 project3 project3 project3 project3 project4 project4 project4 project4 project4 project4 project4";
   grid-gap: 30px;
-  max-width: 1300px;
+  max-width: 1600px;
   
 }
 
@@ -351,6 +478,8 @@ b{
   min-width: 310px;
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
 .img {
   width: 100%;
@@ -361,24 +490,30 @@ b{
   filter: grayscale(.9);
   transform: scale(1.1);
 }
+.project2{
+  grid-area: project2;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
 .project3{
   grid-area: project3;
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
-
 .project4{
   grid-area: project4;
-  display: flex;
-  position: relative;
-}
-.project5{
-  grid-area: project5;
   min-width: 310px;
   display: flex;
   position: relative;
+  justify-content: center;
+  align-items: center;
 }
-.overlay {
+/* .overlay {
   position: absolute;
   top:0;
   left: 0;
@@ -406,7 +541,8 @@ b{
 }
 .overlay > a:hover{
   transform: scale(1.1);
-}
+} */
+
 .overlay:hover{
   opacity: .8;
   
@@ -414,22 +550,9 @@ b{
 .resume > span {
   font-size: 14px;
 }
-/* This one is out, for the code and site*/
-/* .overlay > button {
-   margin: 2vw;
-  padding: 5px 30px;
-  border-radius: 20px;
-  background: black;
-  color: white;
-  border: 1px solid rgba(200, 150, 100, .6);
-  font-size: 18px;
-  font-family: 'Montserrat', sans-serif;
-  cursor: pointer;
-  transition: all .3s ease;
-} */
 
 .contact-container{
-  background: linear-gradient(to top, rgba(0, 0, 0, .8), rgba(0, 0, 0, .99)60%), url('city.jpg');
+  background: linear-gradient(to top, rgba(0, 0, 0, .72), rgba(0, 0, 0, .98)90%), url('images/city.jpg');
   background-size: cover;
   padding: 3vw;
   display: flex;
@@ -550,6 +673,54 @@ footer > p{
   align-items: center;
   margin: 5vh auto 15vh auto;
 }
+#thanks-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 12vh auto 3vh auto;
+  padding-bottom: 6.5vh;
+  border-bottom: 1px solid rgba(200, 150, 100, .6);
+  width: 70%;
+}
+.thank-you-title {
+  font-family: 'Hurricane', cursive;
+}
+.thanks-text {
+  margin-top: 5vh;
+  font-size: 25px;
+ 
+}
+.additional {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 15vh;
+}
+.icons > i {
+  font-size: 40px;
+}
+.up {
+  position: fixed;
+  bottom: 95px;
+  right: 0;
+  background-color:rgba(200, 150, 100, .6);
+  padding: 10px;
+  display: none;
+  transition: all .3s ease;
+}
+.up > ion-icon {
+  color: white;
+  font-size: 30px;
+}
+.up > ion-icon:hover{
+  transform: scale(1.2);
+}
+.show-btn {
+  display: block;
+  transition: all .3s ease;
+}
 @media (min-width:800px) {
   .mobile-nav {
     display: none;
@@ -572,6 +743,15 @@ footer > p{
   .head{
      height: 120px;
      margin-top: 6vh;
+  }
+  .content-cont {
+    flex-direction: column;
+  }
+  .image-cont{
+    width: 90%;
+  }
+  .text-cont{
+    width: 90%;
   }
   
 }
@@ -610,9 +790,14 @@ footer > p{
      width: 100vw;
      justify-content: space-between;
   }
-  .logo{
-     
+  .btn-cont{
+   margin: 1vh auto;
   }
+  .btn-cont > a{
+    font-size: 13px;
+    padding: .5vw;
+  }
+ 
 }
 @media (max-width: 650px) {
   .about-info{
@@ -635,4 +820,17 @@ footer > p{
       width: 90%;
       margin-bottom: 5vh;
   }
+  
+  }
+  @media (max-width: 530px) {
+    #thanks-container {
+      width: 95%;
+    }
+    .thank-you-title {
+      font-size: 4rem;
+    }
+    .thanks-text{
+      font-size: 20px;
+    }
+    
   }
