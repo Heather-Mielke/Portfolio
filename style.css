@@ -12,7 +12,7 @@ body{
   position: relative;
 }
 .background{
-  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .99)60%), url('black-sand.jpg');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, .3), rgba(0, 0, 0, .99)60%), url('images/black-sand.jpg');
   width: 100vw;
   height: 95vh;
   display: flex;
@@ -251,6 +251,7 @@ header{
   width: 100vw;
   justify-content: center;
   align-items: center;
+  margin-top: 3vh;
 }
 
 
@@ -267,22 +268,45 @@ h1{
   font-size:7vw;
   font-family: 'Herr Von Muellerhoff', cursive;
   text-align: center;
+  animation: slideInLeft 3s alternate;
   
 }
 .text-title > p{
   font-size: 30px;
   font-family: 'Work Sans', sans-serif;
   text-align: center;
+  animation: slideInLeft 3s alternate;
+}
+@keyframes slideInLeft {
+  from {
+    margin-left: -110%;
+    width: 100%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
 .image-title{
   position: relative;
   /* margin-left: 5vw; */
   width: 25vw;
+  animation: fadeIn 3s alternate;
 }
 .image-border{
   width: 10vw;
   margin-left: 10vw;
   min-width: 100px;
+}
+@keyframes fadeIn {
+  from {
+   opacity: 0;
+   transform: translateY(-300px);
+  }
+  to {
+   opacity: 1;
+   transform: translateY(0);
+  }
 }
 .selfie{
   width: 20vw;
@@ -306,6 +330,17 @@ h1{
   /* padding-top: 4vh; */
   font-family: 'Hurricane', cursive;
   font-weight: 100;
+  animation: fadeInBtoS 3s alternate;
+}
+@keyframes fadeInBtoS {
+  from {
+   opacity: 0;
+   transform: scale(3);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
 }
 .arrows {
   position: absolute;
@@ -343,6 +378,7 @@ h1{
 }
 .photo-container {
   background: black;
+  margin:10vh 0 5vh 0;
 }
 .banner-border{
   text-align: center;
@@ -363,7 +399,7 @@ h1{
 .banner-slider-track{
   display: flex;
   width:clac(250px *18);
-  animation: scroll 40s linear infinite;
+  animation: scroll 35s linear infinite;
   transition: all .001s ease;
 }
 @keyframes scroll {
@@ -371,7 +407,8 @@ h1{
       transform: translateX(0);
   }
   100% {
-      transform: translateX(calc(-250px * 7));
+      /* transform: translateX(calc(-250px * 7)); */
+      transform: translateX(-2125px);
   }
 }
 .img-container {
@@ -390,7 +427,7 @@ h1{
   transform: translateZ(10px);
 }
 .banner-container::before{
-  background: linear-gradient(to right, rgba(0,0,0,.7) 0%, rgba(0,0,0,0) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,.99) 30%, rgba(0,0,0,.0) 80%);
   content: '';
   height: 100%;
   position: absolute;
@@ -400,7 +437,7 @@ h1{
   top: 0;
 }   
 .banner-container::after {
-  background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.7) 100%);
+  background: linear-gradient(to right, rgba(0,0,0,0) 0%, rgba(0,0,0,.99) 70%);
   content: '';
   height: 100%;
   position: absolute;
@@ -453,7 +490,7 @@ b{
   padding: 15vh 5vw;
   display: grid;
   grid-template-columns: repeat(15, 1fr);
-  grid-template-rows: 150px 450px 450px;
+  grid-template-rows: 200px 450px 450px;
   grid-template-areas: 
   "head head head head head head head head head head head head head head head"
   "project1 project1 project1 project1 project1 project1 project1 project2 project2 project2 project2 project2 project2 project2 project2"
@@ -465,6 +502,7 @@ b{
 
 .head{
   grid-area: head;
+  margin-bottom: 5vh;
  
 }
 .head > h3{
@@ -480,14 +518,16 @@ b{
   position: relative;
   justify-content: center;
   align-items: center;
+  
 }
 .img {
   width: 100%;
   transition: all .3s ease;
   cursor: pointer;
+  filter: grayscale(1);
 }
 .img:hover{
-  filter: grayscale(.9);
+  filter: grayscale(0);
   transform: scale(1.1);
 }
 .project2{
@@ -704,12 +744,13 @@ footer > p{
 }
 .up {
   position: fixed;
-  bottom: 95px;
+  bottom: 28px;
   right: 0;
   background-color:rgba(200, 150, 100, .6);
   padding: 10px;
   display: none;
   transition: all .3s ease;
+  z-index: 3;
 }
 .up > ion-icon {
   color: white;
@@ -799,7 +840,7 @@ footer > p{
     padding: .5vw;
   }
  .close{
-   top: 3px;
+   top: 0;
    right: 5px;
  }
 }
@@ -853,5 +894,7 @@ footer > p{
     .thanks-text{
       font-size: 20px;
     }
-    
+    .skills{
+      margin-bottom: 25vh;
+    }
   }

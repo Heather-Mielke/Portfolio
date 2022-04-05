@@ -6,7 +6,7 @@ $(() => {
 
   $(window).scroll(function() {
     let scroll = $(window).scrollTop()
-    
+    console.log(scroll)
     if(scroll >=500) {
       $up.addClass('show-btn')
       
@@ -14,6 +14,7 @@ $(() => {
       $up.removeClass('show-btn')
     }
   })
+
 
 
 
@@ -54,30 +55,30 @@ $menuButton.on('click', () => {
   })
   //Click functions for project modals
   $project1.on('click', () => {
-    $modal1.toggleClass('add-modal')
+    $modal1.fadeIn('slow').toggleClass('add-modal')
   })
   $project2.on('click', () => {
-    $modal2.toggleClass('add-modal')
+    $modal2.fadeIn('slow').toggleClass('add-modal')
   })
   $project3.on('click', () => {
-    $modal3.toggleClass('add-modal')
+    $modal3.fadeIn('slow').toggleClass('add-modal')
   })
   $project4.on('click', () => {
-    $modal4.toggleClass('add-modal')
+    $modal4.fadeIn('slow').toggleClass('add-modal')
   })
 
   //Click functions for closing project modals
   $close1.on('click', () => {
-    $modal1.toggleClass('add-modal')
+    $modal1.fadeOut('slow').toggleClass('add-modal')
   })
   $close2.on('click', () => {
-    $modal2.toggleClass('add-modal')
+    $modal2.fadeOut('slow').toggleClass('add-modal')
   })
   $close3.on('click', () => {
-    $modal3.toggleClass('add-modal')
+    $modal3.fadeOut('slow').toggleClass('add-modal')
   })
   $close4.on('click', () => {
-    $modal4.toggleClass('add-modal')
+    $modal4.fadeOut('slow').toggleClass('add-modal')
   })
 
   
